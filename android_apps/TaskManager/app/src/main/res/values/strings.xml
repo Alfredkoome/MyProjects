@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="hint_add_task">What needs to be done?</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_clear_completed">Clear Completed</string>
+    <string name="error_empty_task">Task cannot be empty</string>
+    <plurals name="tasks_remaining">
+        <item quantity="one">%d task remaining</item>
+        <item quantity="other">%d tasks remaining</item>
+    </plurals>
+</resources>

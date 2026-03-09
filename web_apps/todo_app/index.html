@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow – To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>✅ TaskFlow</h1>
+      <p class="subtitle">Organise your day, one task at a time.</p>
+    </header>
+
+    <main class="app-body">
+      <!-- Input form -->
+      <form id="task-form" class="task-form" aria-label="Add new task">
+        <input
+          id="task-input"
+          type="text"
+          class="task-input"
+          placeholder="What needs to be done?"
+          maxlength="200"
+          autocomplete="off"
+          aria-label="New task description"
+          required
+        />
+        <button type="submit" class="btn btn-primary" aria-label="Add task">
+          Add
+        </button>
+      </form>
+
+      <!-- Filter bar -->
+      <nav class="filter-bar" aria-label="Filter tasks">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </nav>
+
+      <!-- Task list -->
+      <ul id="task-list" class="task-list" aria-label="Task list" aria-live="polite"></ul>
+
+      <!-- Footer info -->
+      <footer class="app-footer">
+        <span id="task-count" class="task-count">0 tasks remaining</span>
+        <button id="clear-completed" class="btn btn-danger" aria-label="Clear completed tasks">
+          Clear Completed
+        </button>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

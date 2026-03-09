@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Android / Gradle build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+bin/
+gen/
+out/
+.gradle/
+local.properties
+android_apps/TaskManager/.idea/
+android_apps/TaskManager/app/.idea/
+android_apps/TaskManager/build/
+android_apps/TaskManager/app/build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
